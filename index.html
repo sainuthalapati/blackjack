@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>PLAY BLACKJACK</title>
+</head>
+<body class="container-body">
+    <div class="container-main">
+        <img src="static/images/title.png" style = "height:180px; width:400px">
+        <div class="flex-box-players">
+            <div class="flex-box-player", id="player-box">
+                <h2>You: <span id="player-blackjack-result">0</span></h2>
+
+                <div class="flex-box-start-cards" id="start-img">
+                    <img src="static/images/aces.png">
+                </div>
+                <div class="flex-box-player-cards" id="player-card-box">
+                </div>
+            </div>
+            <div class="flex-box-dealer", id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+
+                <div class="flex-box-start-cards" id="start-img">
+                    <img src="static/images/aces.png">
+                </div>
+                <div class="flex-box-dealer-cards" id="dealer-card-box">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="flex-box-buttons">
+            <div>
+                <button class="button_action" id="hit-button" onclick="hitPlayer()" style="background-color: rgb(99, 99, 248);color: white;" disabled=true>HIT</button>
+            </div>
+            <div>
+                <button class="button_action" id="stay-button" onclick="dealer()" style="background-color: rgb(29, 151, 29);color:white" disabled=true>STAY</button>
+            </div>
+            <div>
+                <button class="button_action" id="deal-button" style="background-color: rgb(196, 52, 52);color:white" onclick="deal()">DEAL</button>
+            </div>
+        </div>
+        <p>* Click on Deal to start the game</p>
+    </div>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
